@@ -276,7 +276,7 @@ BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 if ON_HEROKU:
     FQDN = str(getenv('FQDN', f'{APP_NAME}.herokuapp.com' if APP_NAME else 'localhost'))
 else:
-    FQDN = str(getenv('FQDN', https://atostream.onrender.com,))
+    FQDN = str(getenv('FQDN','atostream.onrender.com'))
 
 SLEEP_THRESHOLD = get_int(environ.get('SLEEP_THRESHOLD', '60'), 60)
 WORKERS = get_int(environ.get('WORKERS', '4'), 4)
