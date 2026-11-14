@@ -216,7 +216,7 @@ PM_SEARCH = is_enabled(environ.get('PM_SEARCH', "True"), True)
 EMOJI_MODE = is_enabled(environ.get('EMOJI_MODE', "False"), False)
 BUTTON_MODE = is_enabled(environ.get('BUTTON_MODE', "False"), False)
 
-STREAM_MODE = is_enabled(environ.get('STREAM_MODE', "False"), False)
+STREAM_MODE = is_enabled(environ.get('STREAM_MODE', "True"), True)
 PREMIUM_STREAM_MODE = is_enabled(environ.get('PREMIUM_STREAM_MODE', "False"), False)
 
 
@@ -263,7 +263,7 @@ BAD_WORDS = {
 # Server & Web Configuration
 # ============================
 
-NO_PORT = is_enabled(environ.get('NO_PORT', 'True'), True)
+NO_PORT = is_enabled(environ.get('NO_PORT', 'False'), False)
 
 APP_NAME = environ.get('APP_NAME', None)
 ON_HEROKU = 'DYNO' in environ
