@@ -72,7 +72,7 @@ ADMINS = [get_id(admin) for admin in environ.get('ADMINS', '8248792819').split()
 CHANNELS = [get_id(ch) for ch in environ.get('CHANNELS', '-1003592579879 -1003036018855 -1004167255440 -1002715303050').split() if ch.strip()]
 
 LOG_CHANNEL = get_id(environ.get('LOG_CHANNEL', '-1003954180870'), 0)
-BIN_CHANNEL = get_id(environ.get('BIN_CHANNEL', '-1003084490680'), 0)
+BIN_CHANNEL = get_id(environ.get('BIN_CHANNEL', '-1004480198183'), 0)
 PREMIUM_LOGS = get_id(environ.get('PREMIUM_LOGS', ''), 0)
 
 DELETE_CHANNELS = [get_id(dch) for dch in environ.get('DELETE_CHANNELS', '').split() if dch.strip()]
