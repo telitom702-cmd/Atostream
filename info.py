@@ -263,7 +263,7 @@ BAD_WORDS = {
 # Server & Web Configuration
 # ============================
 
-NO_PORT = is_enabled(environ.get('NO_PORT', 'False'), False)
+NO_PORT = is_enabled(environ.get('NO_PORT', 'True'), True)
 
 APP_NAME = environ.get('APP_NAME', None)
 ON_HEROKU = 'DYNO' in environ
